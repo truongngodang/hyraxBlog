@@ -1,0 +1,22 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "main/variables";
+@import "main/mixins";
+
+// Reset and dependencies
+
+// Core CSS
+@import "main/type";
+@import "main/admin";
+// Components
+@import "main/navbar";
+@import "main/media";
+@import "main/button";
+@import "main/form";
+@import "main/paginate";
+@import "main/footer";

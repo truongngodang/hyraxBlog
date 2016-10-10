@@ -1,0 +1,139 @@
+.navbar {
+	border-radius: 0;
+	background-color: #fff;
+	min-height: 100px;
+	padding: 23px 0;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,.2);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,.2);
+	@media (max-width: $sc-sm) {
+		padding: 0;
+		min-height: 50px;
+	}
+	&-brand {
+		margin-right: 30px;
+		font-weight: 600;
+		font-size: 1.5em;
+        font-family: $heading-fonts;
+		color: #333 !important;
+		span {
+			font-weight: 300;
+		}
+		@media (max-width: $sc-sm) {
+			margin: 0;
+		}
+	}
+	&-nav {
+		li {
+			min-height: 50px;
+			a {
+                font-family: $heading-fonts;
+				font-weight: 600;
+				font-size: .8em;
+				color: #333 !important;
+				&:hover {
+					color: $primary-color !important;
+				}
+			}
+		}
+		.fa {
+			font-weight: normal;
+            font-family: 'FontAwesome';
+		}
+		li.active {
+			a {
+				background-color: transparent !important;
+				color: $primary-color !important;
+			}
+		}
+		
+	}
+
+	&-social {
+		@media (max-width: $sc-md) {
+			display: none;
+		}
+		margin-left: 50px;
+		li {
+			a{
+				padding: 15px 5px;
+				&:hover {
+					color: $primary-color !important;
+				}
+			}
+			.fa-facebook {
+				color:  #3f51b5 !important;
+			}
+			.fa-twitter {
+				color:  #2196f3 !important;
+			}
+			.fa-linkedin {
+				color: #0d47a1 !important;
+			}
+			.fa-rss {
+				color: #ff9800 !important;
+			}
+		}
+	}
+	&-auth {
+		.dropdown-menu {
+			min-width: 132px;
+			li {
+				min-height: 0;
+				a {
+					padding: 10px;
+				}
+			}
+		}
+	}
+	&-toggle {
+		border: none;
+		&:hover {
+			background-color: transparent !important;
+		}
+		.icon-bar {
+			background-color: $primary-color !important;
+		}
+	}
+}
+
+.form-search {
+	form {
+		padding: 0 10px;
+		border-radius: 10px;
+		margin: 10px 0 10px 30px;
+		background-color: $light-color;
+	}
+	input[type=text] {
+		width: 50px;
+		border: none;
+		background-color: transparent;
+		font-size: .875em;
+		transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+	}
+	input[type=text]:focus {
+		width: 100px;
+	}
+	@media (max-width: $sc-xs) {
+		display: none;
+	}
+}
+
+.form-search-m {
+	@media (max-width: $sc-sm) {
+		display: block;
+	}
+	display: none;
+	float: right;
+	background-color: $light-color;
+	padding: 0 10px;
+	border-radius: 10px;
+	margin: 10px 30px 10px 0px;
+	input[type=text] {
+		width: 100px;
+		border: none;
+		background-color: transparent;
+		font-size: .875em;
+		transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+	}
+}

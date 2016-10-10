@@ -1,0 +1,27 @@
+body {
+  font-size: 16px;
+  font-family: $body-fonts;
+  background-color: #f1f1f1;
+  line-height: 1.5em;
+  font-style: normal;
+  /*@media (max-width: $sc-xs) {
+      font-size: 14px;
+  }*/
+}
+
+a {
+  color: #333;
+  &:hover {
+    color: $primary-color !important;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.space {
+  padding: 10px 0;
+}

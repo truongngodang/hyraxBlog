@@ -1,0 +1,14 @@
+.pagination {
+	li {
+		a {
+			margin-top: 2px;
+			border-radius: 3px;
+			margin-right: 10px;
+			font-size: .875em;
+			color: #000;
+			text-transform: uppercase;
+			font-weight: 600;
+            font-family: $heading-fonts;
+		}
+	}
+}

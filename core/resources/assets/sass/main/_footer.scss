@@ -1,0 +1,23 @@
+.footer {
+	background-color: #313035;
+	padding: 40px 0;
+	&__copy {
+		float: left;
+		color: $light-color;
+		font-size: .75em;
+		font-weight: 600;
+	}
+	&__social {
+		float: right;
+		list-style: none;
+		padding: 0;
+		li {
+			display: inline;
+			a {
+				font-size: .75em;
+				color: $light-color;
+				margin-left: 10px;
+			}
+		}
+	}
+}

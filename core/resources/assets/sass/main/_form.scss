@@ -1,0 +1,6 @@
+.auth {
+  padding: 20px;
+  background: #fff;
+  @include box-shadow();
+  @include border-radius(5px);
+}
